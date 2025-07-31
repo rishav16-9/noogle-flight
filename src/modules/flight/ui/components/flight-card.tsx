@@ -43,7 +43,7 @@ export const FlightCard = ({ itinerary }: Props) => {
               {leg.carriers.marketing.map((carrier) => (
                 <div key={carrier.id} className="flex items-center gap-2">
                   <Image
-                    src={"/flight.svg"}
+                    src={carrier.logoUrl || "/flight.svg"}
                     alt={carrier.name}
                     width={10}
                     height={0}
