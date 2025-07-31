@@ -1,0 +1,1 @@
+export const BASE_API_URL="https://sky-scrapper.p.rapidapi.com/api/v1"
