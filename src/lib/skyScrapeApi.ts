@@ -1,7 +1,7 @@
-import { ApiResponse } from "@/modules/home/nearbyairpots-types";
+import { ApiResponse } from "@/modules/flight/nearbyairpots-types";
 import { axiosInstance } from "./axiosInstance";
-import { SearchAirportApiResponse } from "@/modules/home/searchairports-types";
-import { Root } from "@/modules/home/searchflights-types";
+import { SearchAirportApiResponse } from "@/modules/flight/searchairports-types";
+import { Root } from "@/modules/flight/searchflights-types";
 
 export const getNearbyAirports = async (
   lat: string,
@@ -21,7 +21,6 @@ export const fetchAirportData = async (
   query: string
 ): Promise<SearchAirportApiResponse> => {
   try {
-    
     const response = await axiosInstance.get("/flights/searchAirport", {
       params: {
         query: query,
@@ -29,7 +28,7 @@ export const fetchAirportData = async (
       },
     });
     return response.data;
-  } catch  {
+  } catch {
     return {
       status: false,
       timestamp: 0,

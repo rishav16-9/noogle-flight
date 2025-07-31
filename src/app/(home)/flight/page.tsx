@@ -1,4 +1,4 @@
-import { FlightView } from "@/modules/home/ui/views/flight-view";
+import { FlightView } from "@/modules/flight/ui/views/flight-view";
 
 export default function Home() {
   return (

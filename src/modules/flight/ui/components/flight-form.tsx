@@ -329,7 +329,7 @@ export const FlightForm = ({ onSearchResult }: Props) => {
                 render={({ field }) => (
                   <FormItem className="w-full md:w-auto">
                     <FormControl>
-                      <Input type="date" {...field} placeholder="Departure" />
+                      <Input type="date" {...field} />
                     </FormControl>
                   </FormItem>
                 )}
@@ -341,7 +341,7 @@ export const FlightForm = ({ onSearchResult }: Props) => {
                   render={({ field }) => (
                     <FormItem className="w-full md:w-auto">
                       <FormControl>
-                        <Input type="date" {...field} placeholder="Return" />
+                        <Input type="date" {...field} />
                       </FormControl>
                     </FormItem>
                   )}

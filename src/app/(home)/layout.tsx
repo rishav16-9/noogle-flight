@@ -1,6 +1,6 @@
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { Navbar } from "@/modules/home/ui/components/navbar";
-import { NavbarSidebar } from "@/modules/home/ui/components/navbar-sidebar";
+import { Navbar } from "@/modules/flight/ui/components/navbar";
+import { NavbarSidebar } from "@/modules/flight/ui/components/navbar-sidebar";
 import { Globe2Icon, HotelIcon, LuggageIcon, PlaneIcon } from "lucide-react";
 const style = "mr-2 h-4 w-4 text-[#0060f0]";
 
@@ -32,7 +32,7 @@ interface Props {
 }
 const Layout = ({ children }: Props) => {
   return (
-    <SidebarProvider>
+    <SidebarProvider defaultOpen={false}>
       <div className="w-full">
         <Navbar />
         <div className="min-h-screen flex pt-[4rem]">

@@ -17,7 +17,7 @@ export const ExploreView = () => {
     {
       name: "Hotel",
       icon: HotelIcon,
-      url: "/hotel",
+      url: "/hotels",
     },
   ];
   return (

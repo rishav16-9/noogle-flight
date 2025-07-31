@@ -25,7 +25,7 @@ export const NavbarSidebar = ({ items }: Props) => {
   const pathname = usePathname();
 
   return (
-    <Sidebar collapsible="icon" className="pt-16 border-none">
+    <Sidebar collapsible="icon"  className="pt-16 border-none">
       <SidebarContent className="bg-background">
         <SidebarGroup>
           <SidebarGroupContent>
